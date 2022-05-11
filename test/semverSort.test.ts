@@ -21,6 +21,28 @@ describe("semverSort", () => {
       "2.5.0",
     ];
 
-    expect(semverSort(unsortedVesions)).not.toStrictEqual(sortedVesions);
+    expect(semverSort(unsortedVesions)).toStrictEqual(sortedVesions);
+  });
+
+  it("should return sorted versions for very long versions", () => {
+    const unsortedVesions = [
+      "1.0",
+      "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0..0.0.1.0",
+      "1.2.3.4.5.6.7.8.9.0.1.2.3.4.5.6.7.8.9.0",
+    ];
+    const sortedVesions = [
+      "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0..0.0.1.0",
+      "1.0",
+      "1.2.3.4.5.6.7.8.9.0.1.2.3.4.5.6.7.8.9.0",
+    ];
+
+    expect(semverSort(unsortedVesions)).toStrictEqual(sortedVesions);
+  });
+
+  it("should return sorted versions for equal versions with different lengthes", () => {
+    const unsortedVesions = ["1.0", "1", "1.0.0.0", "1.0.0"];
+    const sortedVesions = ["1", "1.0", "1.0.0", "1.0.0.0"];
+
+    expect(semverSort(unsortedVesions)).toStrictEqual(sortedVesions);
   });
 });

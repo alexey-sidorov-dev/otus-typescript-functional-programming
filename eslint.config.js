@@ -23,6 +23,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     "no-console": "off",
     "no-alert": "off",
+    "no-bitwise": ["error", { allow: ["~"] }],
     "max-len": ["error", { ignoreComments: true, code: 120 }],
     "no-param-reassign": ["error", { props: false }],
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],

@@ -1,5 +1,7 @@
 export function semverSort(unsortedVersions: string[]): string[] {
-  return unsortedVersions.sort((a: string, b: string): number => {
+  const varsions = JSON.parse(JSON.stringify(unsortedVersions));
+
+  return varsions.sort((a: string, b: string): number => {
     const aVersions: string[] = a.split(".");
     const bVersions: string[] = b.split(".");
     for (let i = 0; i < bVersions.length; i++) {

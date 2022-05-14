@@ -21,19 +21,21 @@ module.exports = {
     "import/no-unresolved": "off",
     "import/extensions": ["warn", "never"],
     "import/prefer-default-export": "off",
-    "no-console": "off",
-    "no-alert": "off",
     "no-bitwise": ["error", { allow: ["~"] }],
     "max-len": ["error", { ignoreComments: true, code: 120 }],
     "no-param-reassign": ["error", { props: false }],
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "no-use-before-define": [
       "error",
-      { functions: false, classes: false, variables: false },
+      { functions: false, classes: true, variables: true },
     ],
     "no-shadow": [
       "error",
-      { builtinGlobals: true, hoist: "functions", allow: ["el", "item", "cb"] },
+      {
+        builtinGlobals: true,
+        hoist: "functions",
+        allow: ["el", "item", "value", "cb"],
+      },
     ],
   },
 };

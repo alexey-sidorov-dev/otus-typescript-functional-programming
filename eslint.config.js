@@ -29,7 +29,7 @@ module.exports = {
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "no-use-before-define": [
       "error",
-      { functions: false, classes: true, variables: true },
+      { functions: false, classes: false, variables: false },
     ],
     "no-shadow": [
       "error",

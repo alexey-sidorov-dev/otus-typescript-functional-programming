@@ -1,10 +1,10 @@
-# "Основы функциональной разработки, асинхронный код"
+# # Курс [OTUS JavaScript Developer. Basic](https://otus.ru/lessons/javascript-basic/)
 
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-typescript-functional-programming/workflows/PR%20Sanity%20Check/badge.svg)](https://github.com/alexey-sidorov-dev/otus-typescript-functional-programming/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-typescript-functional-programming/workflows/Coverage/badge.svg)](https://github.com/alexey-sidorov-dev/otus-typescript-functional-programming/actions)
 [![Actions Status](https://github.com/alexey-sidorov-dev/otus-typescript-functional-programming/workflows/Add%20CodeSandbox%20link/badge.svg)](https://github.com/alexey-sidorov-dev/otus-typescript-functional-programming/actions)
 
-## Домашнее задание
+## Домашнее задание "Основы функциональной разработки, асинхронный код"
 
 Реализация типовых задач с использованием OOП / ФП с покрытием кода тестами.
 

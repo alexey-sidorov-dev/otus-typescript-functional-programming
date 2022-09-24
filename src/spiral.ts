@@ -10,7 +10,7 @@ export function spiral(matrix: number[][]): number[] {
   return result;
 }
 
-export function rotateMatrix(matrix: any[][], rotateLeft?: boolean): any[][] {
+export function rotateMatrix<T>(matrix: T[][], rotateLeft?: boolean): T[][] {
   if (matrix && matrix[0] && matrix[0].length === 0) {
     return matrix;
   }
